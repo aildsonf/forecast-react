@@ -1,6 +1,9 @@
 import React from "react";
-import "./Header.css";
 
 export default function Header({ children }) {
-  return <h1 className="header">{children}</h1>;
+  return (
+    <h1 className="flex justify-between items-center text-5xl text-white font-semibold">
+      {children}
+    </h1>
+  );
 }
